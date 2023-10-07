@@ -48,14 +48,31 @@ public class Teatro {
                         }else{
                             System.out.print(asientos[i][j] + " ");
                         }
-                        
-                        
                     }
                     System.out.println("");
                 }
+                
                 System.out.println("Porfavor ingrese primero la FILA. (0 a 9)");
                 int f= in.nextInt();
-                System.out.println("Ahora ingrese la columna");
+                System.out.println("Ahora ingrese la COLUMNA (0 a 9)");
+                int c= in.nextInt();
+                
+                Cliente clien = new Cliente(name);
+                asientos[f][c]=clien;
+                
+                /////////////////////////
+                for (int i = 0; i < 10; i++) {
+                    for (int j = 0; j < 10; j++) {
+                        if(asientos[i][j] == null){
+                            System.out.print("L("+i+"-"+j + ") ");
+                        }else{
+                            System.out.print(asientos[i][j] + "("+i+"-"+j + ") ");
+                        }
+                    }
+                    System.out.println("");
+                }
+                //////////////////////////
+                
             }else if(n.equalsIgnoreCase("no")){
                 System.out.println("Se reservara el asiento aleatoriamente.");
                 
