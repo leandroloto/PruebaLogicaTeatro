@@ -31,6 +31,31 @@ public class Teatro {
     
     //Ejecucion principal de la reserva de asientos
     public void reservaAsientos(){
+        System.out.println("Porfavor elegir una opcion: \n"
+                + "1 - Mostrar asientos disponibles. \n"
+                + "2 - Ingresar reserva a un asiento. \n"
+                + "3 - Salir.");
+        int opc = in.nextInt();
+        while(opc != 3 && opc<1){
+            System.out.println("Porfavor elegir una opcion: \n"
+                + "1 - Mostrar asientos disponibles. \n"
+                + "2 - Ingresar reserva a un asiento. \n"
+                + "3 - Salir.");
+            opc = in.nextInt();
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //while()
         System.out.println("¿Reservar asiento? (Responder con 'SI' O 'NO')");
         String n = in.nextLine();
