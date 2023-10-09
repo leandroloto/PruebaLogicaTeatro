@@ -45,7 +45,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "X";
+        return "[X]";
     }
     
     
